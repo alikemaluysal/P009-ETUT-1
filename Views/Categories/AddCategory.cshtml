@@ -1,0 +1,19 @@
+﻿@model Category;
+@{
+    ViewData["Title"] = "AddCategory";
+}
+
+
+
+<br />
+
+@*@using(Html.BeginForm("","",FormMethod.Post))*@
+
+<form method="post" asp-action="AddCategory" asp-controller="Categories">
+    <h2>Kategori Adı</h2>
+    <br />  
+    <input type="text" placeholder="Kategori adı giriniz." name="CategoryName" class="form-control"/>
+    <br />
+    <button type="submit" class="btn btn-outline-success">Ekle</button>
+</form>
+
